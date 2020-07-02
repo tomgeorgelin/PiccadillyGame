@@ -1,0 +1,11 @@
+*.doc
+*.docx
+
+.vscode/settings.json
+*.log
+
+OLD/
+local/
+code/node_modules
+
+conf.json

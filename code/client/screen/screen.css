@@ -1,0 +1,211 @@
+@font-face {
+	font-family: lato;
+	src: url("../fonts/lato");
+}
+
+@font-face {
+	font-family: lato;
+	font-weight: bold;
+	src: url("../fonts/lato-bold");
+}
+
+body {
+	background-color: #7a2c2c;
+	color: #fefefe;
+	font-family: lato;
+	height: 100vh;
+	margin: 0px;
+	padding: 20px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.8vh;
+}
+
+#javascript-error {
+	font-size: 60px;
+}
+
+#home {
+	text-align: center;
+	font-size: 1.8vh;
+}
+
+#service-name {
+	font-weight: bold;
+	margin-bottom: 0.5em;
+	font-size: 6em;
+}
+
+#disconnect-message {
+	font-size: 26px;
+}
+
+#join-invitation {
+	font-size: 2em;
+	margin-bottom: 1em;
+}
+
+#start-countdown-info {
+	font-size: 2.5em;
+	margin-bottom: 1em;
+}
+
+#players-info {
+	font-size: 2em;
+}
+
+#players-count {
+	font-weight: bold;
+}
+
+#min-players-info {
+	font-size: 2em;
+}
+
+#min-players-count {
+	font-weight: bold;
+}
+
+#question-number {
+	font-size: 3.3em;
+	margin-bottom: 30px;
+}
+
+#question {
+	/* font-size: 60px; */
+	font-size: 4.2em;
+	font-weight: bold;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+#question-info {
+	font-size: 3.3em;
+	/* font-size: 40px; */
+	margin-bottom: 0.5em;
+}
+
+.answer {
+	background-color: #a65050;
+	/* width: 600px; */
+	padding: 10px 20px;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	/* font-size: 40px; */
+	font-weight: bold;
+	width: 80vw;
+	font-size: 3em;
+}
+
+#results-header {
+	font-size: 50px;
+	font-weight: bold;
+	margin-bottom: 50px;
+}
+
+#results {
+	font-size: 24px;
+}
+
+.result:nth-child(n+2) {
+	border-top: 1px solid white;
+}
+
+.result {
+	display: flex;
+	width: 500px;
+}
+
+.result-pseudo {
+	padding: 10px;
+	background: #551d1d;
+	flex: 1;
+}
+
+.result-score {
+	padding: 10px;
+	background: #351212;
+}
+
+#qr {
+	margin: 2em;
+	width: 35vh;
+	height: 35vh;
+}
+
+#url {
+	color: #fff;
+	text-decoration: none;
+}
+
+
+/* jeu de fusée */
+
+#game {
+	margin-top: 5%;
+	background-image: url(screen/moon.svg), url(screen/stars1.svg), url(screen/stars2.svg), url(screen/background.svg);
+	background-position: 0px 0px;
+	animation: speed 30s linear infinite;
+	position: relative;
+}
+
+.starship {
+	position: absolute;
+	transition: 50ms;
+}
+
+#gate {
+	position: absolute;
+	top: 0px;
+	left: 200px;
+
+	transform-origin: 0 105px;
+}
+
+.gate-wall {
+	position: absolute;
+	left: 0px;
+}
+
+.gate-wall#top {
+	top: 0px;
+}
+
+.gate-base {
+	position: absolute;
+	left: -15px;
+}
+
+.gate-base.top {
+	transform: rotate(180deg);
+	top: 0px;
+}
+
+.gate-laser {
+	position: absolute;
+	left: -1px;
+	top: 12px;
+	background-color: red;
+	box-shadow: 0px 0px 5px red;
+	width: 2px;
+	height: 20px;
+}
+
+@keyframes speed {
+	100% {
+		background-position: -500vw 0px, -400vw 0px, -300vw 0px, -200vw 0px;
+	}
+}
+
+@keyframes apparition {
+	0% {
+		transform: scale(0);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}

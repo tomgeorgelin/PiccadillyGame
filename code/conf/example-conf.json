@@ -1,0 +1,18 @@
+{
+	"game": "questions",
+
+	"liste des jeux possibles (commentaire)": [
+		"questions",
+		"space"
+	],
+
+	"minPlayer": 3,
+	"startCountdownTime": 10,
+	"scoreCountdownTime": 30,
+
+	"port": 80,
+
+	"nbQuestions": 4,
+
+	"testMode": false
+}
