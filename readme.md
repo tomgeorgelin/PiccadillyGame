@@ -2,7 +2,7 @@
 
 Projet Tutoré - IUT Nancy Charlemagne 2019-2020
 
-- Tom Georgelin [@totomdotcom](https://github.com/totomdotcom)
+- Tom Georgelin [@totomdotcom](https://github.com/tomgeorgelin)
 - Martin Jossic [@daiSKeul](https://github.com/daiSKeul)
 - Matéo Achterfeld [@Achterfeld](https://github.com/Achterfeld)
 - Guillaume Keller [@GPaddle](https://github.com/GPaddle)
